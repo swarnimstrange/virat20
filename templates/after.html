@@ -1,0 +1,31 @@
+<html>
+
+<body bgcolor=#a3cfb4>
+
+    <center>
+
+        <h1>  Prediction : <span style="color: #8B2252">{{data}} RUNS </span> </h1>
+
+    {% if data > 99 %}
+    <h1>Woohoo! Virat made Century</h1>
+    <img src='static\virat100.jpg' width="1000"
+     height="600" />
+
+     {% elif data > 49 and data < 100 %}
+    <h1>Yayy! Virat made fifty</h1>
+    <img src='static\virat50.jpg'>
+
+    {%else%}
+    <h1>Oh! Virat made less than fifty</h1>
+    <img src='static\virat30.jpg'>
+
+    {%endif%}
+
+        <br><br>
+    <a href='/'>go back to home page</a>
+
+    </center>
+
+</body>
+
+</html>
