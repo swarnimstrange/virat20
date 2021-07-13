@@ -1,8 +1,8 @@
 from flask import Flask, render_template, request
-import joblib
+import pickle
 import numpy as np
 
-model = joblib.load("score.pkl")
+model = pickle.load(open('score.pkl', 'rb'))
 
 print(model)
 
