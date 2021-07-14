@@ -4,8 +4,6 @@ import numpy as np
 
 model = pickle.load(open('score.pkl', 'rb'))
 
-print(model)
-
 app = Flask(__name__)
 
 
