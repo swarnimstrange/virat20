@@ -1,6 +1,10 @@
 <html>
     <head>
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        .responsive {
+  width: 100%;
+  height: auto;
+}
     </head>
 <body bgcolor=#a3cfb4>
 
@@ -10,16 +14,15 @@
 
     {% if data > 99 %}
     <h1>Woohoo! Virat made Century</h1>
-    <img src='static\virat100.jpg' width="1000"
-     height="600" />
+    <img src='static\virat100.jpg' class="responsive" width="600" height="400" />
 
      {% elif data > 49 and data < 100 %}
     <h1>Yayy! Virat made fifty</h1>
-    <img src='static\virat50.jpg'>
+    <img src='static\virat50.jpg' class="responsive" width="600" height="400" />
 
     {%else%}
     <h1>Oh! Virat made less than fifty</h1>
-    <img src='static\virat30.jpg'>
+    <img src='static\virat30.jpg' class="responsive" width="600" height="400" />
 
     {%endif%}
 
