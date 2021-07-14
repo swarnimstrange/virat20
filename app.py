@@ -20,6 +20,7 @@ def home():
     data1 = request.form['a']
     arr = np.asarray(data1, dtype='float64')
     arr = arr.reshape(1, -1)
+    print(arr)
     pred = int(round(model.predict(arr)[0][0]))
     return render_template('after.html', data=pred)
 
