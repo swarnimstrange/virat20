@@ -12,17 +12,25 @@
 
     <center>
 
-        <h1>  Prediction : <span style="color: #8B2252">{{data}} RUNS </span> </h1>
-
+        <h1>  Prediction :  </h1>
+        
     {% if data > 99 %}
+    <h1><span style="color: #8B2252">{{data}} RUNS </span></h1>
     <h1>Woohoo! Virat made Century</h1>
-    <img src='static\virat100.jpg' class="responsive" width="600" height="400" />
+    <img src='static\virat100.jpg' class="responsive" width="600" height="400"  />
 
      {% elif data > 49 and data < 100 %}
+     <h1><span style="color: #8B2252">{{data}} RUNS </span></h1>
     <h1>Yayy! Virat made fifty</h1>
     <img src='static\virat50.jpg' class="responsive" width="600" height="400" />
 
+     {% elif data < 0 %}
+     <h1><span style="color: #8B2252">0 RUNS </span></h1>
+    <h1>Alas! Virat made Duck</h1>
+    <img src='static\virat_duck.jpg' class="responsive" width="600" height="400" />
+
     {%else%}
+    <h1><span style="color: #8B2252">{{data}} RUNS </span></h1>
     <h1>Oh! Virat made less than fifty</h1>
     <img src='static\virat30.jpg' class="responsive" width="600" height="400" />
 
