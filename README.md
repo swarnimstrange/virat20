@@ -1,7 +1,7 @@
 # virat20
 
 <h1> We can predict Virat Kohli T20 Scores from this website<h1>
-<a href="https://virat20.herokuapp.com/"> </a>
+https://virat20.herokuapp.com/
 <h5>This may take a little while opening the website...so be patient😀</h5>
 
 <h2>Main Page of Website </h2>
